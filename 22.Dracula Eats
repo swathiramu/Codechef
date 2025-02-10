@@ -1,0 +1,26 @@
+Eat, drink, and be scary
+There are N spooky days left until Halloween.
+Dracula dines at a mysterious restaurant that changes its spooky menu daily. He particularly enjoys what they serve on Tuesday.
+Today is Monday, so he wishes to calculate how many times he can indulge in his favourite menu in the next N days (including today) before Halloween.
+Note that Dracula follows the standard 7-day calendar, with Tuesday immediately following Monday.
+
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
+		{
+		    int N=sc.nextInt();
+		    N=N-1;
+		    System.out.println((int)Math.ceil((float)N/7));
+		}
+	}
+}
